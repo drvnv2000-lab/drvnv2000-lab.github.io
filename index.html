@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Varad Vaidya, PharmD</title>
+<meta name="description" content="Medication-safety AI built to survive a sceptical reviewer.">
+<meta property="og:title" content="Varad Vaidya, PharmD: medication-safety AI">
+<meta property="og:description" content="Pre-registered, patient-level, pharmacist-reviewed healthcare AI.">
+<meta property="og:image" content="https://drvnv2000-lab.github.io/polysafe/og.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700;12..96,800&family=Public+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f2f4f3;--panel:#e8ecea;--ink:#142028;--muted:#56636c;--rule:#d0d7da;--clin:#3e5c76;--med:#0b8a7a;--aki:#d4861c}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--paper:#0f1518;--panel:#162026;--ink:#e6ecee;--muted:#93a1a9;--rule:#26323a;--clin:#8fb0cc;--med:#3cc3b0;--aki:#f2a94a}}
+:root[data-theme="dark"]{--paper:#0f1518;--panel:#162026;--ink:#e6ecee;--muted:#93a1a9;--rule:#26323a;--clin:#8fb0cc;--med:#3cc3b0;--aki:#f2a94a}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 "Public Sans",system-ui,sans-serif}
+a{color:var(--med)}a:focus-visible{outline:3px solid var(--med);outline-offset:3px}
+.wrap{max-width:980px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Bricolage Grotesque",system-ui,sans-serif;letter-spacing:-.015em;line-height:1.08;margin:0}
+header{padding:80px 0 56px}
+.name{font-size:16px;color:var(--muted);margin:0 0 18px}
+h1{font-size:clamp(36px,6vw,64px);font-weight:800;max-width:16ch}
+.lede{font-size:19px;color:var(--muted);max-width:52ch;margin:20px 0 0}
+section{padding:56px 0;border-top:1px solid var(--rule)}
+h2{font-size:28px;margin-bottom:20px}
+.feature{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:36px;align-items:center}
+.feature img{width:100%;border-radius:10px;border:1px solid var(--rule);display:block}
+.feature h3{font-size:30px;margin:4px 0 12px}
+.num{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:44px;color:var(--med);line-height:1;margin:12px 0 4px}
+.small{font-size:14px;color:var(--muted)}
+.links{display:flex;gap:18px;flex-wrap:wrap;margin-top:16px;font-weight:600}
+.list{display:grid;gap:0}
+.row{display:grid;grid-template-columns:200px 1fr 180px;gap:20px;padding:18px 0;border-bottom:1px solid var(--rule);align-items:baseline}
+.row h3{font-size:20px}
+.status{font-size:14px;color:var(--muted);text-align:right}
+.status b{color:var(--ink);font-weight:600}
+ul.how{padding-left:20px;max-width:62ch}ul.how li{margin-bottom:8px}
+footer{padding:40px 0 64px;border-top:1px solid var(--rule);color:var(--muted);font-size:14px}
+@media (max-width:760px){.feature,.row{grid-template-columns:1fr}.status{text-align:left}header{padding:56px 0 40px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <p class="name">Dr. Varad Vaidya, PharmD, Bangalore</p>
+  <h1>Medication-safety AI, built to survive a sceptical reviewer.</h1>
+  <p class="lede">I am a pharmacist building clinical prediction models. I commit the analysis
+  plan before training anything, validate at the patient level, and classify drugs the way a
+  pharmacist would, not by matching strings.</p>
+</header>
+
+<section>
+  <h2>Featured study</h2>
+  <div class="feature">
+    <a href="https://drvnv2000-lab.github.io/polysafe/"><img src="https://drvnv2000-lab.github.io/polysafe/og.png" alt="PolySafe: 2,520 ICU stays filtered down to the 671 analysed, 78 with kidney injury"></a>
+    <div>
+      <p class="small">PolySafe, complete</p>
+      <h3>Do a patient's drugs help predict kidney injury in the ICU?</h3>
+      <p>A pre-registered study of 2,520 ICU stays from 186 US hospitals. Adding five drugs
+      improved a pre-specified model, but only when drugs were counted from their codes: a name
+      search misses two in three piperacillin-tazobactam exposures.</p>
+      <div class="num">+0.036 AUROC</div>
+      <p class="small">95% CI 0.006 to 0.071; no gain in a flexible model, reported as such</p>
+      <div class="links"><a href="https://drvnv2000-lab.github.io/polysafe/">Explore the study</a>
+        <a href="https://github.com/drvnv2000-lab/polysafe">Code and protocol</a></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>All projects</h2>
+  <div class="list">
+    <div class="row"><h3><a href="https://github.com/drvnv2000-lab/polysafe">PolySafe</a></h3>
+      <p>Medication exposure and ICU acute kidney injury prediction, pre-registered, with a live interactive study page.</p>
+      <p class="status"><b>Complete</b><br>244 tests, CI, Docker</p></div>
+    <div class="row"><h3>ADMET Benchmark</h3>
+      <p>Reproducible baselines on all 22 Therapeutics Data Commons ADMET tasks, official scaffold splits, five seeds, scored by TDC's own evaluator.</p>
+      <p class="status"><b>Results ready</b><br>release in preparation</p></div>
+    <div class="row"><h3>TumorLens</h3>
+      <p>Uncertainty-aware tumour imaging, written from scratch.</p>
+      <p class="status"><b>In design</b></p></div>
+  </div>
+</section>
+
+<section>
+  <h2>How I work</h2>
+  <ul class="how">
+    <li>The analysis plan is committed before any model is trained, and can only grow: a test fails on any commit that edits it.</li>
+    <li>Validation is grouped by patient, so repeat admissions never leak between training and testing.</li>
+    <li>Every number in a write-up is tested against the result file it came from.</li>
+    <li>Limits and corrections are published, including the uncomfortable ones.</li>
+  </ul>
+</section>
+
+<footer>
+  <p><a href="https://github.com/drvnv2000-lab">GitHub</a></p>
+</footer>
+</div>
+</body>
+</html>
